@@ -18,7 +18,7 @@
        pkg:  nginx
        state: latest
        update_cache: yes
-     when: ppastable|SUCCESS
+     when: ppastable|success
      notify:
       - Start Nginx
 
