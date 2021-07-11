@@ -16,9 +16,9 @@
    - name: Install Nginx
      apt:
        pkg:  nginx
-       state: installed
-       update_cache:  true
-     when: ppastable|success
+       state: latest
+       update_cache: yes
+     when: ppastable|SUCCESS
      notify:
       - Start Nginx
 
